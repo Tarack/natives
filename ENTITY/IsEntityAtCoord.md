@@ -11,6 +11,8 @@ BOOL IS_ENTITY_AT_COORD(Entity entity, float xPos, float yPos, float zPos, float
 ```
 Checks if entity is within x/y/zSize distance of x/y/z.   
 Last three are unknown ints, almost always p7 = 0, p8 = 1, p9 = 0  
+
+If p7 is set to true and the native is called in a loop, it will create a checkpoint (marker) at the specified position.
 ```
 
 ## Parameters
